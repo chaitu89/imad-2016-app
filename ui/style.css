@@ -1,11 +1,21 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
+	background-image: url("background.jpg"); 
+    background-repeat: no-repeat;
     margin-top: 75px;
+	font-color: white;
 }
 
 .center {
     text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
 }
 
 .text-big {
@@ -20,3 +30,8 @@ body {
     height: 200px;
 }
 
+.img-rounded{
+    border-radius: 50%;
+	height: 200px
+	width: 200px
+}

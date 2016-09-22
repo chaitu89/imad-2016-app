@@ -17,6 +17,14 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
+app.get('/ui/background.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'background.jpg'));
+});
+
+app.get('/ui/chaitu.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'chaitu.jpg'));
+});
+
 app.get('/ui/svm.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'svm.jpg'));
 });

@@ -9,7 +9,9 @@ var articleOne = {
 	title: 'Article One | Chaitanya',
 	heading: 'Article One', 
 	date: 'Sep 23, 2016',
-	content: '<p> \n' + 'This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.\n' + '</p>'
+	content: `<p>
+	This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.
+	</p>`
 }
 
 function createTemplate (data) {
@@ -21,7 +23,7 @@ function createTemplate (data) {
 		<html>
 			<head>
 				<title>
-					  ${title]
+					  ${title}
 			 	</title>
 				<meta name="viewport" content="width-device-width, initial-scale-1" />
 		        <link href="/ui/style.css" rel="stylesheet" />
@@ -33,13 +35,13 @@ function createTemplate (data) {
 					</div>
 					<hr/>
 					<h3>
-					  ${heading]
+					  ${heading}
 					</h3>
 					<div>
-					  ${date]
+					  ${date}
 					</div>
 					<div>
-					  ${content]
+					  ${content}
 					</div>
 				</div>
 			</body>

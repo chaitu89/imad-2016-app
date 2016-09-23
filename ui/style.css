@@ -1,7 +1,6 @@
 body {
     font-family: sans-serif;
-    margin-top: 75px;
-	font-color: black;
+    margin-top: 60px;
 }
 
 .center {
@@ -31,7 +30,6 @@ body {
 .img-rounded{
     border-radius: 50%;
 	height: 200px
-	width: 200px
 }
 
 .container{
@@ -39,7 +37,6 @@ body {
 	margin: 0 auto;
 	color: #a78787;
 	font-family: sans-serif;
-	padding-top: 60px;
 	padding-left: 20px;
 	padding-right: 20px;
 }

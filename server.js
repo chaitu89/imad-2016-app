@@ -12,7 +12,7 @@ var articleOne = {
 	content: `<p>
 	This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.
 	</p>`
-}
+};
 
 function createTemplate (data) {
 	var title = data.title;

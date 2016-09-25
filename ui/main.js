@@ -25,8 +25,7 @@ button.onclick = function() {
 
 // Populate a name list
 
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
+
 var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
   // Make a request to the server and send the name
@@ -50,6 +49,8 @@ submit.onclick = function() {
   //Capture a list of names and rent it on a list
 	};
 	// Make a request to the counter
+	var nameInput = document.getElementById('name');
+var name = nameInput.value;
 	request.open('GET','http://chaitu89.imad.hasura-app.io/submit-name?name='+name,true);
 	request.send(null);
 };

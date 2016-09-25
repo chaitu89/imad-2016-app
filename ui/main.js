@@ -2,7 +2,7 @@ console.log('Loaded!');
 
 // Move image
 
-var img = getElementbyId("chaitu");
+var img = getElementById("chaitu");
 img.onclick = function() {
   img.style.marginLeft = "100px";
 };

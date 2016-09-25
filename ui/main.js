@@ -4,5 +4,5 @@ console.log('Loaded!');
 
 var img = getElementbyId("chaitu");
 img.onclick = function() {
-  img.style.marginLeft = "100px"
+  img.style.marginLeft = "100px";
 };

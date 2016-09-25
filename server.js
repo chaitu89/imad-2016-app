@@ -11,8 +11,8 @@ var articles = {
 	heading: 'Article One', 
 	date: 'Sep 23, 2016',
 	content: `<p>
-	This is the content of the first article.
-	</p>`
+				This is the content of the first article.
+			</p>`
 },
     'article-two': {
 	title: 'Article Two | Chaitanya',
@@ -38,7 +38,7 @@ function createTemplate(data){
 	var date = data.date;
 	var content = data.content;
 	var htmlTemplate = `
-	<html>
+		<html>
 			<head>
 				<title>
 					  ${title}
@@ -63,13 +63,19 @@ function createTemplate(data){
 					</div>
 				</div>
 			</body>
-		</html>
-		`;
+		</html>`
+		;
 		return htmlTemplate;
 }
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+var counter = 0;
+app.get('/counter', function (req, res) {
+	counter = counter + 1;
+	res.send(counter.toString());
 });
 
 app.get('/ui/style.css', function (req, res) {
@@ -81,12 +87,12 @@ app.get('/:articleName', function (req, res) {
   res.send(createTemplate(articles[articleName]));
 });
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-app.get('/ui/background.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'background.jpg'));
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
 app.get('/ui/chaitu.jpg', function (req, res) {

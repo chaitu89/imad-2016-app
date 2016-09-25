@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<title>
+      Profile Page
+	</title>
+	<div class="container">
+    <head>
+        <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="center bold">
+           Chaitanya's Profile page 
+        </div>
+        <div class="center">
+            <img src="/ui/chaitu.jpg" class="img-medium img-rounded"/>
+        </div>
+        <br>
+        <div class="center">
+		Contact me on my <a href="http://facebook.com/chaitanya.vijay" target="_blank">Facebook Page</a>
+        </div>
+
+        <script type="text/javascript" src="/ui/main.js">
+        </script>
+    </body>
+    </div>
+</html>

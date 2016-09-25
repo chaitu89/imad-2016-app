@@ -19,6 +19,6 @@ button.onclick = function() {
 	};
 
 	// Make a request to the counter
-	request.open('GET','http://10.22.3.210:8080/counter',true);
+	request.open('GET','http://http://chaitu89.imad.hasura-app.io/counter',true);
 	request.send(null);
 };
